@@ -42,7 +42,7 @@ NamespaceCssTransform.prototype._flush = function (cb) {
     var parsed = parse(self.origCss);
 
     traverse.forEach(parsed, function (node) {
-      if (this.key === 'selectors' && node != '@fontface') {
+      if (this.key === 'selectors' && !(typeof node === 'string' && node.match(/^@/))) {
         this.update(node.map(self._namespace.bind(self)));
       }
     });
