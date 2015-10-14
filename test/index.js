@@ -145,8 +145,8 @@ test('\nmultiple rules', function (t) {
       t.end();
     })
 
-  test('\n don\'t namespace at-rules, e.g. @fontface', function (t) {
-    fs.createReadStream(path.join(fixtures, 'at-rules.css'), 'utf8')
+  test('\n don\'t namespace @fontface', function (t) {
+    fs.createReadStream(path.join(fixtures, 'fontface.css'), 'utf8')
       .on('error', fail.bind(t))
       .pipe(namespace({ selector: '.jsdoc' }))
       .on('error', fail.bind(t))
