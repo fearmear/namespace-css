@@ -15,8 +15,8 @@
   },
   "homepage": "https://github.com/thlorenz/namespace-css",
   "dependencies": {
-    "css-parse": "~2.0.0",
-    "css-stringify": "~2.0.0",
+    "css-parse": "fearmear/css-parse",
+    "css-stringify": "fearmear/css-stringify",
     "traverse": "~0.6.6",
     "minimist": "1.1.0"
   },
