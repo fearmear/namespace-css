@@ -3,8 +3,8 @@
 var stream = require('stream');
 
 var util      =  require('util')
-  , parse     =  require('css-parse')
-  , stringify =  require('css-stringify')
+  , parse     =  require('css').parse
+  , stringify =  require('css').stringify
   , traverse  =  require('traverse')
   ;
 
